@@ -1,0 +1,77 @@
+<!--
+  Copyright (c) 2025–present
+  PIX4ME Authors
+
+  All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PIX4ME - Uso de dados.</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="loading">
+      <img id="loadingLogo" class="loading-logo" src="../assets/img/logoGDU.png">
+      <div class="loader"></div>
+    </div>
+
+  <div class="wiki">
+    <main class="wiki-content">
+      <div class="card2">
+        <img src='..\assets\img\logoGDU.png' class='logoGDU'>
+        <h1>Uso de Dados</h1>
+
+        <p>
+        O PIX4ME foi desenvolvido com foco na privacidade e segurança dos usuários. A plataforma não realiza
+        armazenamento, coleta permanente ou banco de dados contendo informações pessoais ou financeiras
+        inseridas durante o uso do sistema.
+        </p>
+
+        <p>
+        Todos os dados informados, como chave PIX, nome do recebedor, cidade e valor da cobrança, são utilizados
+        exclusivamente no momento da geração da cobrança PIX, com a única finalidade de criar o QR Code e o
+        código de pagamento no padrão oficial definido pelo Banco Central do Brasil.
+        </p>
+
+        <p>
+        O PIX4ME não compartilha, não vende, não repassa e não utiliza essas informações para qualquer outro
+        fim além do funcionamento imediato da aplicação. Os dados não são analisados, rastreados ou associados
+        a perfis de usuários, nem utilizados para fins comerciais, publicitários ou estatísticos.
+        </p>
+
+        <p>
+        A geração da cobrança ocorre localmente durante a execução da aplicação, seguindo as especificações
+        técnicas do sistema PIX, conforme regulamentação do Banco Central do Brasil. O PIX4ME não atua como
+        instituição financeira, intermediador de pagamentos ou participante do arranjo PIX.
+        </p>
+
+        <p>
+        Ao utilizar a plataforma, o usuário tem total controle sobre as informações fornecidas, sendo
+        responsável pelos dados inseridos e pelo compartilhamento da cobrança gerada. O PIX4ME não monitora
+        transações, não confirma pagamentos e não tem acesso a dados bancários dos envolvidos.
+        </p>
+
+        <p>
+        Dessa forma, o PIX4ME reforça seu compromisso com a privacidade, transparência e uso responsável das
+        informações, respeitando os princípios da Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018)
+        e as diretrizes estabelecidas pelo Banco Central do Brasil para o sistema PIX.
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    window.onload = () => {
+        setTimeout(() => {
+            loading.style.opacity = "0";
+            setTimeout(() => loading.remove(), 600);
+        }, 900);
+    };
+  </script>
+  <script src='../index.js'></script>
+</body>
+</html>

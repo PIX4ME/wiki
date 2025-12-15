@@ -1,0 +1,170 @@
+<!--
+  Copyright (c) 2025–present
+  PIX4ME Authors
+
+  All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PIX4ME - FAQ.</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="loading">
+      <img id="loadingLogo" class="loading-logo" src="../assets/img/logoGDU.png">
+      <div class="loader"></div>
+    </div>
+
+  <div class="wiki">
+    <main class="wiki-content">
+      <div class="card2">
+        <img src='..\assets\img\logoGDU.png' class='logoGDU'>
+        <h1>FAQ.</h1>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            O Pix4me é gratuito?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim. O Pix4me é totalmente gratuito e não cobra taxas pelo uso da plataforma.
+              Eventuais tarifas podem ser aplicadas apenas pela instituição financeira do usuário.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso gerar cobranças sem valor definido?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Não. Para garantir a compatibilidade com o padrão do PIX, é necessário informar um valor
+              válido no momento da geração da cobrança.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso alterar uma cobrança já gerada?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Não. Após a geração da cobrança, os dados não podem ser alterados.
+              Caso seja necessário, gere uma nova cobrança com as informações corretas.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            A cobrança expira automaticamente?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim. Toda cobrança possui um tempo de expiração exibido na tela.
+              Após esse prazo, recomenda-se gerar uma nova cobrança.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            O Pix4me funciona offline?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Não. É necessário estar conectado à internet para gerar cobranças e exibir o QR Code.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            O Pix4me funciona em todos os navegadores?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim. A plataforma é compatível com os navegadores modernos mais utilizados,
+              como Google Chrome, Microsoft Edge, Firefox e Safari.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso compartilhar o QR Code gerado?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim. O QR Code pode ser compartilhado livremente com o pagador
+              por aplicativos de mensagem, e-mail ou qualquer outro meio.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            O Pix4me tem limite de valor?
+          </button>
+          <div class="faq-answer">
+            <p>
+              O Pix4me não impõe limites de valor. No entanto, podem existir limites
+              definidos pela instituição financeira do usuário.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            O Pix4me armazena histórico de cobranças?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Não. O sistema não mantém histórico, registros ou logs de cobranças geradas.
+              Cada cobrança é criada de forma temporária.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso usar o Pix4me para fins comerciais?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim. A plataforma pode ser utilizada para cobranças pessoais ou comerciais,
+              respeitando as regras do PIX e da instituição financeira do usuário.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    window.onload = () => {
+        setTimeout(() => {
+            loading.style.opacity = "0";
+            setTimeout(() => loading.remove(), 600);
+        }, 900);
+    };
+  </script>
+
+  <script>
+    document.querySelectorAll(".faq-question").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const item = btn.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+
+  <script src='../index.js'></script>
+</body>
+</html>

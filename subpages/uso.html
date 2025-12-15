@@ -1,0 +1,90 @@
+<!--
+  Copyright (c) 2025–present
+  PIX4ME Authors
+
+  All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PIX4ME - Uso.</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="loading">
+      <img id="loadingLogo" class="loading-logo" src="../assets/img/logoGDU.png">
+      <div class="loader"></div>
+    </div>
+
+  <div class="wiki">
+    <main class="wiki-content">
+      <div class="card">
+        <img src='..\assets\img\logoGDU.png' class='logoGDU'>
+          <h1>Como Usar o PIX4ME</h1>
+
+          <p>
+          Utilizar o PIX4ME é simples e rápido. A plataforma foi desenvolvida para permitir a criação de cobranças
+          via PIX em poucos passos, sem exigir conhecimento técnico ou configurações avançadas.
+          </p>
+
+          <p>
+          Para iniciar, preencha o campo <b>Chave Pix</b> com a chave que receberá o pagamento. Você pode utilizar
+          qualquer tipo de chave válida, como CPF, CNPJ, e-mail, número de telefone ou chave aleatória.
+          Certifique-se de que a chave foi informada corretamente para evitar erros no pagamento.
+          </p>
+
+          <p>
+          Em seguida, informe o nome do <b>Recebedor</b>. Esse nome será exibido para quem for realizar o pagamento,
+          ajudando na identificação correta da cobrança. Logo após, preencha o campo <b>Cidade</b>, respeitando
+          o limite de caracteres solicitado pelo sistema.
+          </p>
+
+          <p>
+          No campo <b>Valor</b>, digite o valor que deseja cobrar, utilizando o formato indicado
+          (por exemplo: 25,00). O sistema realizará a formatação automaticamente, garantindo compatibilidade
+          com o padrão do PIX.
+          </p>
+
+          <p>
+          Após preencher todos os campos, clique no botão <b>“Gerar cobrança”</b>. O PIX4ME irá processar as
+          informações e gerar automaticamente o QR Code de pagamento, além do código PIX em formato textual,
+          que pode ser copiado e compartilhado.
+          </p>
+
+          <p>
+          O pagador poderá realizar o pagamento escaneando o QR Code com o aplicativo do banco ou copiando
+          o código PIX e colando na área de pagamento do aplicativo bancário de sua preferência.
+          </p>
+
+          <p>
+          Durante a visualização da cobrança, o sistema exibirá um temporizador de expiração. Caso o tempo
+          se esgote, será necessário gerar uma nova cobrança para garantir a validade das informações.
+          </p>
+
+          <p>
+          Para facilitar, o PIX4ME também disponibiliza um botão para copiar rapidamente o código PIX.
+          Após o pagamento, basta gerar uma nova cobrança caso seja necessário realizar outro recebimento.
+          </p>
+
+          <p>
+          Seguindo esses passos, você poderá utilizar o PIX4ME de forma prática, segura e eficiente,
+          simplificando o processo de recebimento de pagamentos via PIX no seu dia a dia.
+          </p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    window.onload = () => {
+        setTimeout(() => {
+            loading.style.opacity = "0";
+            setTimeout(() => loading.remove(), 600);
+        }, 900);
+    };
+  </script>
+  <script src='../index.js'></script>
+</body>
+</html>

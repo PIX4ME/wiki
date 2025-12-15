@@ -1,0 +1,77 @@
+<!--
+  Copyright (c) 2025–present
+  PIX4ME Authors
+
+  All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PIX4ME - Introdução.</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="loading">
+      <img id="loadingLogo" class="loading-logo" src="../assets/img/logoGDU.png">
+      <div class="loader"></div>
+    </div>
+
+  <div class="wiki">
+    <main class="wiki-content">
+      <div class="card">
+        <img src='..\assets\img\logoGDU.png' class='logoGDU'>
+          <h1>Introdução - O que é o PIX4ME?</h1>
+
+          <p>
+          O PIX4ME é uma plataforma desenvolvida com o objetivo de simplificar a geração de cobranças via PIX,
+          oferecendo uma solução rápida, prática e acessível para usuários que precisam receber pagamentos de
+          forma imediata. A aplicação foi pensada para eliminar processos burocráticos, permitindo a criação
+          de cobranças em poucos segundos, diretamente pelo navegador, sem necessidade de cadastro ou instalação
+          de aplicativos adicionais.
+          </p>
+
+          <p>
+          Por meio do PIX4ME, o usuário pode informar os dados essenciais da cobrança, como a chave PIX, o nome
+          do recebedor, a cidade e o valor a ser pago. Com essas informações, o sistema gera automaticamente um
+          QR Code compatível com o padrão do Banco Central do Brasil, além de disponibilizar o código PIX em
+          formato textual, que pode ser copiado e colado em qualquer aplicativo bancário.
+          </p>
+
+          <p>
+          A interface do PIX4ME foi projetada para ser intuitiva e fácil de utilizar, atendendo tanto usuários
+          sem conhecimento técnico quanto profissionais que realizam cobranças com frequência. O layout
+          responsivo garante uma experiência consistente em computadores, tablets e dispositivos móveis,
+          permitindo que a cobrança seja criada e compartilhada de qualquer lugar.
+          </p>
+
+          <p>
+          A plataforma também oferece recursos adicionais que tornam o processo mais seguro e organizado,
+          como a visualização clara dos dados da cobrança, a indicação do valor a ser pago e um temporizador
+          de expiração, que ajuda a evitar pagamentos fora do prazo. Essas funcionalidades contribuem para
+          uma experiência mais confiável tanto para quem cobra quanto para quem realiza o pagamento.
+          </p>
+
+          <p>
+          O PIX4ME é uma solução ideal para pequenos empreendedores, prestadores de serviços, vendedores
+          autônomos e qualquer pessoa que precise receber pagamentos via PIX de maneira rápida e eficiente.
+          Ao unir simplicidade, agilidade e compatibilidade com o sistema financeiro brasileiro, a plataforma
+          se apresenta como uma ferramenta moderna e funcional para o dia a dia.
+          </p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    window.onload = () => {
+        setTimeout(() => {
+            loading.style.opacity = "0";
+            setTimeout(() => loading.remove(), 600);
+        }, 900);
+    };
+  </script>
+  <script src='../index.js'></script>
+</body>
+</html>

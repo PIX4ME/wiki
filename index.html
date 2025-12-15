@@ -1,0 +1,81 @@
+<!--
+  Copyright (c) 2025–present
+  PIX4ME Authors
+
+  All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PIX4ME - Guia de Uso.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="loading">
+      <img id="loadingLogo" class="loading-logo" src="assets/img/logoGDU.png">
+      <div class="loader"></div>
+    </div>
+
+  <div class="wiki">
+    <main class="wiki-content">
+      <div class="card">
+        <img src='assets\img\logoGDU.png' class='logoGDU'>
+        <h1>Guia de Uso</h1>
+          <p>
+            Este guia foi desenvolvido para auxiliar você na utilização da plataforma PIX4ME de forma simples, segura e eficiente.
+            Aqui você encontrará explicações detalhadas sobre as principais funcionalidades, orientações passo a passo e
+            boas práticas para aproveitar todos os recursos disponíveis.
+          </p>
+
+          <p>
+            O objetivo deste material é tornar a experiência do usuário mais clara e intuitiva, independentemente do seu
+            nível de conhecimento técnico. Cada seção foi organizada para facilitar a navegação e o entendimento, permitindo
+            que você encontre rapidamente a informação que precisa.
+          </p>
+
+          <p>
+            Recomendamos a leitura completa deste guia antes de utilizar a plataforma, pois ele contém informações importantes
+            sobre funcionamento, segurança e uso correto do sistema. Caso surja qualquer dúvida durante o uso do PIX4ME,
+            consulte as seções abaixo para obter suporte e esclarecimentos.
+          </p>
+
+        <div class="wiki-links">
+        <a href="subpages/introducao.html" class="wiki-box">
+          <h3>Introdução</h3>
+          <p>Entenda o que é o PIX4ME e como funciona.</p>
+        </a>
+
+        <a href="subpages/uso.html" class="wiki-box">
+          <h3>Como Usar</h3>
+          <p>Passo a passo para utilizar a plataforma.</p>
+        </a>
+
+        <a href="subpages/faq.html" class="wiki-box">
+          <h3>Perguntas Frequentes</h3>
+          <p>Dúvidas comuns e soluções rápidas.</p>
+        </a>
+
+        <a href="subpages/usoDados.html" class="wiki-box">
+          <h3>Uso de dados.</h3>
+          <p>Como usamos e distribuimos seus dados.</p>
+        </a>
+      </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+     window.onload = () => {
+        setTimeout(() => {
+            loading.style.opacity = "0";
+            setTimeout(() => loading.remove(), 600);
+        }, 900);
+      };
+  </script>
+  <script src='index.js'></script>
+</body>
+</html>
