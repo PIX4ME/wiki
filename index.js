@@ -13,7 +13,7 @@
   let targetScroll = currentScroll;
   let isScrolling = false;
 
-  const ease = 0.1;
+  const ease = 0.15;
 
   function smoothScroll() {
     currentScroll += (targetScroll - currentScroll) * ease;
@@ -57,4 +57,5 @@
       requestAnimationFrame(smoothScroll);
     }
   });
+
 })();
